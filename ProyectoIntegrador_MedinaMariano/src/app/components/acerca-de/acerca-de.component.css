@@ -7,7 +7,9 @@ div{
 }
 #nombre{
     font-weight: bold;
+    margin-top: 5%;
 }
+
 @media(min-width: 576px){
     #FotoPerfil{
         position: absolute;
@@ -16,6 +18,9 @@ div{
         box-shadow: 3px 3px 3px gray;
         left: 3%;
         top: 600px;
+    }
+    #nombre{
+        margin-left: 3%;
     }
 }
 @media(max-width: 575px){
@@ -26,6 +31,9 @@ div{
         box-shadow: 3px 3px 3px gray;
         left: 34%;
         top: 550px;
+    }
+    #nombre{
+        margin-top: 8%;
     }
 }
 /*revisar y mejorar la presentacion*/
