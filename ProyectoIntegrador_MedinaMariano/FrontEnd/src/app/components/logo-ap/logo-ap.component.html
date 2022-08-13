@@ -11,7 +11,8 @@
                 <a href="https://www.facebook.com/mariano.medina.3517563/"target="_blank"><img src="../../../assets/facebook2.0.png" id="facebook"></a>
                 <a href="https://www.linkedin.com/in/mariano-medina-8b9a781a1"target="_blank"><img src="../../../assets/linkedin2.0.png" id="linkedin"></a>
                 <a href="https://www.instagram.com/mariano.medina1601/"target="_blank"><img src="../../../assets/instagram2.0.png" id="instagram"></a>
-                <button type="button" class="btn btn-outline-dark" (click)="login()">INGRESO</button>
+                <button type="button" class="btn btn-outline-dark" (click)="login()" *ngIf="!isLogged">INGRESO</button>
+                <button type="button" class="btn btn-outline-dark" (click)="onLogOut()" *ngIf="isLogged">SALIR</button>
             </div>
         </div>
     </div>
