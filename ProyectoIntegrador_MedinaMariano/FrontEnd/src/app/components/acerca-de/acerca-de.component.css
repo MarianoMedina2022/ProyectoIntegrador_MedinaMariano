@@ -12,15 +12,18 @@ div{
 
 @media(min-width: 576px){
     #FotoPerfil{
-        position: absolute;
-        width: 13%;
+
         border-radius: 100%;
         box-shadow: 3px 3px 3px gray;
-        left: 3%;
-        top: 600px;
+
     }
     #nombre{
         margin-left: 3%;
+    }
+    .descripcion{
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
 }
 @media(max-width: 575px){
