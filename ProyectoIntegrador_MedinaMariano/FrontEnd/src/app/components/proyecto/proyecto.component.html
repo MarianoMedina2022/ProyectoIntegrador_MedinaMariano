@@ -1,12 +1,76 @@
-<div class="row">
-    <h1>Proyectos realizados</h1>
-    <div class="contenedor">
-        <div class="col-sm-12 col-md-7 col-lg-7 parte1">
-            <h2>proyecto 1</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quod quaerat fugit recusandae, autem consequuntur tenetur iste? Cupiditate repudiandae, dolorum maiores nesciunt quibusdam laudantium non quia perspiciatis ullam odit assumenda.</p>
+  <!--<div class="row">
+  <div class="col-lg-2">
+      <button type="button" class="btn btn-dark" routerLink="/nuevoProy" *ngIf="isLogged">
+        Agregar Proyecto
+      </button>
+  </div>
+  <br>
+  <div class="row">
+      <div class="col-lg-6 mb-4" *ngFor="let proyecto of proy">
+          <div class="card bg-light border-dark mb-3">
+              <img class="card-img-top" [src]="proyecto.imagen" alt="Card image cap">
+              <div class="card-block">
+                  <h4 class="card-title">{{proyecto?.nombrePro}}</h4>
+                  <ul class="list-group list-group-flush">
+                      <li class="list-group-item">{{proyecto?.descripPro}}</li>
+                      <li class="list-group-item"><a href={{proyecto?.link}}>{{proyecto?.link}}</a></li>
+                      <li class="list-group-item">{{proyecto?.anio}}</li>
+
+                      <div *ngIf="isLogged">
+                          <button class="btn btn-dark" routerLink="editProy/{{proyecto?.id}}">
+                              <i class="bi bi-pencil-fill"></i> Editar
+                          </button>
+                          &nbsp;
+                          <button class="btn btn-dark" (click)="delete(proyecto.id)">
+                              <i class="bi bi-trash-fill"></i> Borrar
+                          </button>
+                      </div>
+
+                  </ul>
+              </div>
+          </div>
+      </div>
+</div>
+  </div>-->
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="row">
+    <div class="div1">
+        <div id="proyecto">
+            <section>
+                <h1 class="heading titulo"><u>Proyectos realizados</u></h1>
+                <div class="proyecto-block" *ngIf="isLogged">
+                    <div style="text-align:center" *ngIf="isLogged">
+                        <button type="button" class="btn btn-dark" routerLink="/nuevoProy" *ngIf="isLogged">
+                            <i class="bi bi-card-text"></i> Añadir Proyecto
+                        </button>
+                    </div>
+                </div>
+
+                <div class="proyecto-block" *ngFor="let Proyecto of proyect">
+                    <h3>{{Proyecto?.nombreP}}</h3>
+                    <h5>{{Proyecto?.descripcionP}}</h5>
+                    <img class="img"><img [src]="imagepService.url" width="400px">
+                    <div style="float:right" *ngIf="isLogged">
+                        <button  class="btn btn-outline-primary" routerLink="/editProy/{{Proyecto?.id}}">
+                            <i class="bi bi-pencil-fill"></i></button>
+                    </div>
+                    <div style="float:right" *ngIf="isLogged">
+                      <button class= "btn btn-outline-danger" (click)="delete(Proyecto.id)">
+                            <i class="bi bi-trash-fill"></i></button>
+                    </div>
+                </div>
+            </section>
         </div>
-        <div class="col-sm-12 col-md-3 col-lg-3 offset-md-1 offset-lg-1 parte2">
-            <img src="../../../assets/what-is-a-full-stack-developer-768x384.png" class="img-fluid img-proyecto">
-        </div>
-    </div>
+   </div>
 </div>

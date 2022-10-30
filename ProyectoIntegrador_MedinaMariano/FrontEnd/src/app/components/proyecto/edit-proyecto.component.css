@@ -1,0 +1,20 @@
+.container{
+  min-height: 100vh;
+  background-color:#581845;
+  padding: 10%;
+  margin: 0 auto;
+}
+
+div{
+  color: #fff;
+}
+
+label{
+  padding: 5px;
+}
+
+button{
+  margin-top: 20px;
+  background: #581845;
+  border: solid 2px #fff;
+}

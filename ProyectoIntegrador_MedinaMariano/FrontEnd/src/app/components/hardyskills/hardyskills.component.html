@@ -1,5 +1,5 @@
 <div class="row">
-  <h1>Hard & Soft skills</h1>
+  <h1><u>Hard & Soft skills</u></h1>
   <div class="col-lg-2">
     <button type="button" routerLink="/newskill" class="btn btn-dark" *ngIf="isLogged">Nueva Skill</button>
   </div>
@@ -10,8 +10,8 @@
       [title]="(skill.nombre)"
       [showUnits]="false"
       [showTitle]="true"
-      [titleColor]="'#1b4f8f'"
-      [titleFontSize]="'3em'"
+      [titleColor]="'#'"
+      [titleFontSize]="'2em'"
       [showSubtitle]="false"
       [radius]="100"
       [imageSrc]="''"
@@ -20,7 +20,7 @@
       [showImage]="false"
       [outerStrokeWidth]="16"
       [innerStrokeWidth]="8"
-      [outerStrokeColor]="'#6c4675'" [innerStrokeColor]="'#6DC36D'"
+      [outerStrokeColor]="'#3f3f73'" [innerStrokeColor]="'#B0C2F2'"
       [animation]="true"
       [animationDuration]="1000">
     </circle-progress>
@@ -28,7 +28,7 @@
     <div>
       <td *ngIf="isLogged"><button type="button" class="btn btn-outline-primary"
         routerLink="/editskill/{{skill.id}}"><i class="bi bi-pen-fill"></i></button></td>
-    <td *ngIf="isLogged"><button type="button" class="btn btn-outline-danger" (click)="delete(skill.id)"><i
+    <td *ngIf="isLogged"><button class= "btn btn-outline-danger" (click)="delete(skill.id)"><i
           class="bi bi-trash-fill"></i></button></td>
     </div>
 

@@ -9,6 +9,8 @@ import { EditSkillsComponent } from './components/hardyskills/edit-skills.compon
 import { NewSkillsComponent } from './components/hardyskills/new-skills.component';
 import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
+import { NewProyectoComponent } from './components/proyecto/new-proyecto.component';
+import { EditProyectoComponent } from './components/proyecto/edit-proyecto.component';
 
 const routes: Routes = [
   {path:'', component:HomeComponent},
@@ -19,7 +21,9 @@ const routes: Routes = [
   { path: 'editedu/:id', component: EditeducacionComponent},
   { path: 'newskill', component: NewSkillsComponent},
   { path: 'editskill/:id', component: EditSkillsComponent},
-  { path: 'editacercade/:id', component: EditAcercaDeComponent}
+  { path: 'editacercade/:id', component: EditAcercaDeComponent},
+  { path: 'nuevoProy', component: NewProyectoComponent},
+  { path: 'editProy/:id', component: EditProyectoComponent}
 
   //{path: '', redirectTo: '/inicio, pathMatch: 'full'}
   //{path: '**', component: Pagina404Component}
