@@ -61,6 +61,7 @@
                     <h3>{{Proyecto?.nombreP}}</h3>
                     <h5>{{Proyecto?.descripcionP}}</h5>
                     <img class="img"><img [src]="imagepService.url" width="400px">
+                    <!--<img src={{Proyecto?.imgP}} class="img-fluid" id="FotoProyecto">-->
                     <div style="float:right" *ngIf="isLogged">
                         <button  class="btn btn-outline-primary" routerLink="/editProy/{{Proyecto?.id}}">
                             <i class="bi bi-pencil-fill"></i></button>
